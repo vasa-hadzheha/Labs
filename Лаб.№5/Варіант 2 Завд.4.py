@@ -1,10 +1,11 @@
-n=int(input("Введіть ціле значення n: ")) # Незакінчена програма
-x0=1
-x1=1
+n=int(input("Введіть ціле значення n: "))
+a = [1,1]
 i=2
-xi=0
-x=1
+
 while i<=n:
-    xi=xi+2*x0
+    el = a[i-1]+2*(a[i-2])
+    a.append(el)
     i+=1
-print(xi)
+
+print("Весь список:{0}".format(a))
+print("xn={0}".format(el))
