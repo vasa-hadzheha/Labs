@@ -9,10 +9,13 @@ def f(x,y):
     else:
         m=math.sin(x*y)
         return (m)
+
 #--------------------------------------
 a=float(input('a='))
 b=float(input('b='))
+print("f(a,b)=",f(a,b))
+print("f(2,a)=",f(2,a))
 u= f(a,b)+f(2,a)+2
-print("U="u)
+print("U=",u)
 
 

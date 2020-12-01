@@ -1,6 +1,6 @@
 import random
 rowCount = int(input("кількість рядків ="))
-colCount = int(input("кількість елементів ="))
+colCount = int(input("кількість елементів (стовпців) ="))
 
 a = [[random.randint(0, 4) for j in range(colCount)] for i in range(rowCount)]
 print("Матриця а ={0}".format(a))
