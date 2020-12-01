@@ -1,16 +1,21 @@
-r=int(input("кількість рядків r="))
-e=int(input("кількість елементів e="))
+import random
+rowCount = int(input("кількість рядків ="))
+colCount = int(input("кількість елементів ="))
 
-a=[[float(input("a[{0}][{1}]=".format(i,j)))  for j in range(e)] for i in range(r)]
+a = [[random.randint(0, 4) for j in range(colCount)] for i in range(rowCount)]
 print("Матриця а ={0}".format(a))
-#Недороблено ------------------------------------
-j=0
-count=0
-for j in range(e):
-    for i in range(r):
-        if a[i][j] !=0:
-            count+=1
-print(count)
 
+count = 0
+for j in range(colCount):  # для кожного стовпця з номером j
+    # визначити чи у стовпці нулі
+    is_zero = False
+    for i in range(rowCount):  # переглянути усі елементи у стовпці
+        if a[i][j] == 0:
+            is_zero = True
+            break
+    if is_zero == False:
+        count += 1
+
+print(count)
 
 
