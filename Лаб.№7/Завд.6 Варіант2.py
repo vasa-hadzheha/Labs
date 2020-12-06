@@ -1,14 +1,22 @@
+import random
 r=int(input("кількість рядків r="))
 e=int(input("кількість елементів e="))
+g=[]
+a=[[random.randint(-5,20)  for j in range(e)] for i in range(r)]
+print(a)
 
-a=[[float(input("a[{0}][{1}]=".format(i,j)))  for j in range(e)] for i in range(r)]
-print("Матриця а ={0}".format(a))
-def g(x):
-    h = []
-    for i in range(r):
-        for j in range(2,e,2):
-            if x[i][j]>0:
-                h+=[a[i][j]]
-    return(h)
-print(g(a))
-print(a.sort(key=g(a))) # Як посортувати рядки за даною характеристикою h?
+h=[]
+
+for i in range(r):
+    h.append(sum([l for l in a[i] if l%2==0 and l>0]))
+print(h)
+
+for i in range(r):
+    g.append(a[h.index(min(h))])
+    h[h.index(min(h))]=10000000
+print(g)
+
+
+
+
+
