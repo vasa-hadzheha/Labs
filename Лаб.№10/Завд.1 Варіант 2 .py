@@ -31,7 +31,7 @@ class Vector:
 
 
 a = Vector()
-a.inp(3)
+a.inp(4)
 a.print_vector()
 f=a.vector_fab()
 
