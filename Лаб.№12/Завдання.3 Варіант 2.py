@@ -1,4 +1,4 @@
-import random
+
 class Matrix:
 
     def __init__(self,count_row,count_column):
@@ -8,7 +8,6 @@ class Matrix:
     def matrix_generation(self):
 
         m=[[float(input("m[{0}][{1}]=".format(i,j))) for j in range(self.count_column)] for i in range(self.count_row)]
-
         return m
     def show_matrix(self,m):
         b = []
@@ -16,7 +15,7 @@ class Matrix:
             row_str = ['{0:5d}'.format(el) for el in row]
             b.append(row_str)
 
-        b = [''.join(['{0:7d}'.format(el) for el in row]) for row in self.m]
+        b = [''.join(['{0:7d}'.format(el) for el in row]) for row in m]
         print("Ваша матриця:",*b, sep='\n')
 
     def __getitem__(self,el):
@@ -56,9 +55,10 @@ class Matrix:
 
 d=Matrix(3,3)
 d.matrix_generation()
-d.min()
-d.max
-d[5]
-d[2,1,1000]
-del d[1]
+d.show_matrix(d)
+# d.min()
+# d.max
+# d[5]
+# d[2,1,1000]
+# del d[1]
 

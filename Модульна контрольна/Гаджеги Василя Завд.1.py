@@ -70,17 +70,16 @@ c1.len_circle()
 c3=c1+c2
 print(c3.repr())
 
-c4=c1-c2
+c4=c2-c1
 print(c4.repr())
 
 mu=c1*3
 mu.str()
-
+c5 = copy.deepcopy(c1)
+print(c5.repr())
 c1=c2
 if c1==c2:
     print("Кола рівні")
-
-
 
 class Cone(TCircle):
 
