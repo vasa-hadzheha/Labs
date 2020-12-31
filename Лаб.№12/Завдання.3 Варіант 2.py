@@ -9,14 +9,15 @@ class Matrix:
 
         m=[[float(input("m[{0}][{1}]=".format(i,j))) for j in range(self.count_column)] for i in range(self.count_row)]
         return m
-    def show_matrix(self,m):
+    def show_matrix(self):
         b = []
-        for row in m:
+        for row in Matrix.matrix_generation():
             row_str = ['{0:5d}'.format(el) for el in row]
             b.append(row_str)
 
-        b = [''.join(['{0:7d}'.format(el) for el in row]) for row in m]
+        b = [''.join(['{0:7d}'.format(el) for el in row]) for row in  Matrix.matrix_generation()]
         print("Ваша матриця:",*b, sep='\n')
+
 
     def __getitem__(self,el):
         for i in range(self.m):            #Не читає значення m--------------------------------------- (Вказувати значення у функції?)
@@ -54,8 +55,8 @@ class Matrix:
         return min(h)
 
 d=Matrix(3,3)
-d.matrix_generation()
-d.show_matrix(d)
+m=d.matrix_generation()
+d.show_matrix(m)
 # d.min()
 # d.max
 # d[5]
