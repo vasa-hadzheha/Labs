@@ -8,10 +8,16 @@ with open("Test2.txt") as f:
 print(res)
 m=max(res)
 
-new_list=str(map(lambda el:el==m if el==0 else el , res))
-print(new_list)
-with open("new_data",'w') as f:
-    f.write(new_list)     # Показує тільки адресу
+new_list=[]
+
+for el in res:
+    if el==0:
+        new_list.append(m)
+    else:
+        new_list.append(el)
+
+with open("new_data.txt",'w') as f:
+    f.write(str(new_list))     # Показує тільки адресу
 
 
 
