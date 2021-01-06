@@ -1,62 +1,64 @@
 
 class Matrix:
 
-    def __init__(self,count_row,count_column):
+    def __init__(self,count_row,count_column,matrix):
         self.count_row=count_row
         self.count_column=count_column
+        self.matrix=matrix
 
-    def matrix_generation(self):
-
-        m=[[float(input("m[{0}][{1}]=".format(i,j))) for j in range(self.count_column)] for i in range(self.count_row)]
-        return m
+    # def matrix_generation(self):  ЯКЩО ГЕНЕРУВАТИ МАТРИЦЮ ТО ВОНА НЕ ВИКОРИСТОВУЄТЬСЯ У ФУНКЦІЯХ!!!
+    #
+    #     m=[[float(input("m[{0}][{1}]=".format(i,j))) for j in range(self.count_column)] for i in range(self.count_row)]
+    #     return m
     def show_matrix(self):
         b = []
-        for row in Matrix.matrix_generation():
+        for row in self.matrix():
             row_str = ['{0:5d}'.format(el) for el in row]
             b.append(row_str)
 
-        b = [''.join(['{0:7d}'.format(el) for el in row]) for row in  Matrix.matrix_generation()]
+        b = [''.join(['{0:7d}'.format(el) for el in row]) for row in  self.matrix()]
         print("Ваша матриця:",*b, sep='\n')
 
 
     def __getitem__(self,el):
-        for i in range(self.m):            #Не читає значення m--------------------------------------- (Вказувати значення у функції?)
-            if el in self.m[i]==True:
+        for i in range(self.matrix):            #Не читає значення m--------------------------------------- (Вказувати значення у функції?)
+            if el in self.matrix[i]==True:
                 return el
             else:
                 raise Exception("Такого елемента немає!!!")    #Error--не працює
 
     def __setitem__(self,row_count,column_count, value):
         if row_count in list(self.count_row)==True and column_count in list(self.count_column)==True:
-            self.m[column_count][row_count]=value
+            self.matrix[column_count][row_count]=value
         else:
             raise Exception("Значення введені неправильно!!!")    #Error--не працює
 
     def __delitem__(self,el):
-        for i in range(self.m):
-            if el in self.m[i]==True:
-                self.m[i].remove(el)
+        for i in range(self.matrix):
+            if el in self.matrix[i]==True:
+                self.matrix[i].remove(el)
             else:
                 raise Exception("Такого елемента немає!!!")     #Error--не працює
 
 
     def max(self):
         h=[]
-        for i in range(self.m):
-            l=max(self.m[i])
+        for i in range(self.matrix):
+            l=max(self.matrix[i])
             h+=l
         return max(h)
 
     def min(self):
         h = []
-        for i in range(self.m):
-            l = min(self.m[i])
+        for i in range(self.matrix):
+            l = min(self.matrix[i])
             h += l
         return min(h)
 
-d=Matrix(3,3)
-m=d.matrix_generation()
-d.show_matrix(m)
+
+m=[[float(input("m[{0}][{1}]=".format(i,j))) for j in range(3)] for i in range(3)]
+d=Matrix(3,3,m)
+d.show_matrix()
 # d.min()
 # d.max
 # d[5]
