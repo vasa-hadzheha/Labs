@@ -17,7 +17,7 @@ for el in res:
         new_list.append(el)
 
 with open("new_data.txt",'w') as f:
-    f.write(str(new_list))    
+    f.write(str(new_list))
 
 
 
