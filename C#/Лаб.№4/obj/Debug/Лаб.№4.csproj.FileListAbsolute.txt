@@ -1,0 +1,7 @@
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\bin\Debug\Лаб.№4.exe.config
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\bin\Debug\Лаб.№4.exe
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\bin\Debug\Лаб.№4.pdb
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\obj\Debug\Лаб.№4.csprojAssemblyReference.cache
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\obj\Debug\Лаб.№4.csproj.CoreCompileInputs.cache
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\obj\Debug\Лаб.№4.exe
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№4\obj\Debug\Лаб.№4.pdb
