@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0C0F6EC-5BB9-4A80-8A0D-520BBC3C0021}</ProjectGuid>
+    <ProjectGuid>{313BF5C3-1DB0-40B6-A425-B9E8B57F314D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Лаб._4</RootNamespace>
-    <AssemblyName>Лаб.№4</AssemblyName>
+    <RootNamespace>Завд._3_Вар._8</RootNamespace>
+    <AssemblyName>Завд.3 Вар.8</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,9 +48,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Лаб.№4\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
