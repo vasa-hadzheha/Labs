@@ -28,7 +28,7 @@ namespace Завд._3_Вар._8
             
             if (Math.Abs(el) > e)
             {
-                Console.WriteLine("Endless Loop (done more than 1000 operations");
+                Console.WriteLine("Endless Loop (done more than 990 operations");
             }
             else
             {
