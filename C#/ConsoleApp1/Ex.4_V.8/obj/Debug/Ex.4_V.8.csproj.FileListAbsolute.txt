@@ -1,7 +1,0 @@
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\bin\Debug\Ex.4_V.8.exe.config
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\bin\Debug\Ex.4_V.8.exe
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\bin\Debug\Ex.4_V.8.pdb
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\obj\Debug\Ex.4_V.8.csprojAssemblyReference.cache
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\obj\Debug\Ex.4_V.8.csproj.CoreCompileInputs.cache
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\obj\Debug\Ex.4_V.8.exe
-E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Ex.4_V.8\obj\Debug\Ex.4_V.8.pdb

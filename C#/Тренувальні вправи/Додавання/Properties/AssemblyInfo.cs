@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Общие сведения об этой сборке предоставляются следующим набором
 // набора атрибутов. Измените значения этих атрибутов для изменения сведений,
 // связанные с этой сборкой.
-[assembly: AssemblyTitle("Ex.4_V.8")]
+[assembly: AssemblyTitle("Додавання")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Ex.4_V.8")]
+[assembly: AssemblyProduct("Додавання")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // Следующий GUID представляет идентификатор typelib, если этот проект доступен из модели COM
-[assembly: Guid("61073555-35d3-479b-b97e-5e3e4a29fb72")]
+[assembly: Guid("83c60c24-ddab-40ad-907d-346268552a2a")]
 
 // Сведения о версии сборки состоят из указанных ниже четырех значений:
 //
