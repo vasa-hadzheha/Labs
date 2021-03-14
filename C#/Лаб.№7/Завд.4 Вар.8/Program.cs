@@ -13,9 +13,9 @@ namespace Завд._4_Вар._8
     /// <param name="rowCount"></param>
     /// <param name="colCount"></param>
     /// <returns></returns>
-        static float[,] getMatrix(int rowCount, int colCount)
+        static float[,] getMatrix(int rowCount)
         {
-            float[,] arr = new float[rowCount, colCount];
+            float[,] arr = new float[rowCount, rowCount];
             Random rand = new Random(DateTime.Now.Millisecond);
             for (int i = 0; i < arr.GetLength(0); i++)
             {
@@ -41,99 +41,44 @@ namespace Завд._4_Вар._8
                 Console.WriteLine();
             }
         }
-        static float[,] sortMatrix(float[,] arr)
+        static float[,] sortColumnMatr(float[,] matr, int col)
         {
-            int ps = 0;
-            int pe = arr.GetLength(0) - 1;
-            int psIN = 1;
-            int peIN = arr.GetLength(1) - 2;
-            /*  while (ps < pe)
-              {
-                  while (ps < pe && psIN < arr.GetLength(1) && arr[ps, psIN] > arr[pe, peIN]) ps++;
-                  {
-
-                      if (psIN >= arr.Length)
-                      {
-                          ps++; psIN = 1;
-                      }
-                      psIN += 2;
-                      if (ps < pe)
-                      {
-                          while (ps < pe && peIN > 0 && arr[pe, peIN] < arr[ps, psIN]) pe--;
-                          {
-
-                              if (peIN < 0)
-                              {
-                                  peIN = arr.GetLength(1) - 2;
-                              }
-                              peIN -= 2;
-                              if (ps < pe && psIN < arr.GetLength(1) && peIN > 0)
-                              {
-                                  float z = arr[pe, peIN];
-                                  arr[pe, peIN] = arr[ps, psIN];
-                                  arr[ps, psIN] = z;
-                                  psIN += 2;
-                                  peIN -= 2;
-                              }
-                              if (peIN < 0)
-                              {
-                                  peIN = arr.GetLength(1) - 2;
-                              }
-
-                          }
-                      }
-
-                  }
-              }*/
-            while (ps < pe)
+            for (int i = 0; i < matr.GetLength(0) - 1; i++)
             {
-                while (ps < pe && psIN < arr.GetLength(1)) ps++;
+                //На і-вому кроці треба знайти індекс мінімального від і-го то кінця
+                int indexMax = i;
+                for (int j = i + 1; j < matr.GetLength(0); j++)
                 {
-
-                    while (ps < pe && psIN < arr.GetLength(1) && arr[ps, psIN] > arr[pe, peIN]) psIN += 2;
-                    {
-                        if (psIN >= arr.Length)
-                        {
-                            psIN = 1;
-                        }
-                        if (ps < pe)
-                        {
-                            while (ps < pe && peIN > 0) pe--;
-                            {
-                                while (ps < pe && peIN > 0 && arr[pe, peIN] < arr[ps, psIN]) peIN -= 2;
-                                {
-                                    if (peIN < 0)
-                                    {
-                                        peIN = arr.GetLength(1) - 2;
-                                    }
-
-
-                                    float z = arr[pe, peIN];
-                                    arr[pe, peIN] = arr[ps, psIN];
-                                    arr[ps, psIN] = z;
-                                    psIN += 2;
-                                    peIN -= 2;
-
-                                }
-                            }
-                        }
-                    }
-
+                    if (matr[j, col] > matr[indexMax, col])
+                        indexMax = j;
+                }
+                //
+                if (i != indexMax)
+                {
+                    float z = matr[i, col];
+                    matr[i, col] = matr[indexMax, col];
+                    matr[indexMax, col] = z;
                 }
             }
+            return matr;
+        }
 
-            return arr;
+        static float[,] sortColumns(float[,] matr)
+        {
+            for (int j = 1; j < matr.GetLength(1); j += 2)
+            {
+                sortColumnMatr(matr, j);
+            }
+            return matr;
         }
         static void Main(string[] args)
         {
-            Console.Write("Кількість рядків: ");
+            Console.Write("Кількість рядків та стовбців: ");
             int r = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Кількість стовпців: ");
-            int c = Convert.ToInt32(Console.ReadLine());
-            float[,] matrix = getMatrix(r, c);
+            float[,] matrix = getMatrix(r);
             printMatrix(matrix);
             Console.WriteLine("Посортована матриця");
-            float[,] sortedMatr = sortMatrix(matrix);
+            float[,] sortedMatr = sortColumns(matrix);
             printMatrix(sortedMatr);
         }
     }
