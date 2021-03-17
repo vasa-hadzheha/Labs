@@ -75,52 +75,36 @@ namespace Завд._5_Вар._8
             }
             return c;
         }
-        static float[,] sortMatrix(float[,] arr,float []ch)
+        static float[,] sortMatrix(float[,] arr,float []characteristic)
         {
-            for (int k = 0; k < ch.GetLength(0); k++)
-            {
-                float max = ch[0];
-                int m = 0;
-                for (int i = 1; i < ch.GetLength(0); i++)
-                {
-                    int l = 0;
-                    if (max < ch[i])
-                    {
-                        max = ch[i];
-                        m = i;
-                    }
-                    if(i== ch.GetLength(0)-1)
-                    {
-                        ch[m] = -1000;
-                    }
-                   /* while (l<l+1)
-                    {
-                        for (int j = 0; j < arr.GetLength(1); j++)
-                        {
-                            float z = arr[l, j];
-                            arr[l, j] = arr[l, m];
-                            arr[l, m] = z;
 
-                        }
-                        if (l < arr.GetLength(0))
-                        {
-                            break;
-                        }
-                        l += 1;
-                    }*/
-                }
-                Console.WriteLine("max=" + max);
-                for (int i = 0; i < arr.GetLength(0); i++)
+            for (int i = 0; i < characteristic.GetLength(0)-1; i++)
+            {
+                int maxInd = i;
+                for (int j = i + 1; j < characteristic.GetLength(0); j++)
                 {
-                    for (int j = 0; j < arr.GetLength(1); j++)
+                    if (characteristic[j] > characteristic[maxInd])
                     {
-                        float z = arr[i, j];
-                        arr[i, j] = arr[i, m];
-                        arr[i, m] = z;
+                        maxInd = j;
+                    }
+                    if (i != maxInd)
+                    {
+                        //сортуємо одновимірний масив
+                        float z = characteristic[i];
+                        characteristic[i] = characteristic[maxInd];
+                        characteristic[maxInd] = z;
+                        //міняємо стовпці матриці
+                        for (int m = 0; m < arr.GetLength(1); m++)
+                        {
+                            float k = arr[m, i];
+                            arr[m,i] = arr[m, maxInd];
+                            arr[m, maxInd] = k;
+                        }
 
                     }
                 }
             }
+            
             return arr;
         }
         static void Main(string[] args)
@@ -136,6 +120,8 @@ namespace Завд._5_Вар._8
             printvec(characteristic);
             Console.WriteLine("Посортована матриця за характеристикою ");
             float[,] sortedMatr = sortMatrix(matrix, characteristic);
+            printvec(characteristic);
+            Console.WriteLine("************");
             printMatrix(sortedMatr);
         }
     }

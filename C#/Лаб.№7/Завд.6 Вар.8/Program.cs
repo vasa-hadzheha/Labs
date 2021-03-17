@@ -52,31 +52,23 @@ namespace Завд._6_Вар._8
                 Console.WriteLine();
             }
         }
-        static float[] getSumOfMatrix(float[,] arr)
+        static float getSumOfMatrix(float[,] arr)
         {
             float s = 0;
             int k = 0;
-            bool isMinus = true;
             float[] c = new float[arr.GetLength(1)];
             for (int i = 0; i < arr.GetLength(1); i++)
             {
                 for (int j = 0; j < arr.GetLength(0); j++)
                 {   
-                    s += arr[j, i];
-                    /*if (arr[j,i]>0)
+                    if (arr[j,i]<0 && j==i)
                     {
-                        isMinus = false;
-                        break;
-                    }*/
-                    if (j == arr.GetLength(0) - 1 && isMinus==true)
-                    {
-                        c[k] = s;
-                        s = 0;
-                        k += 1;
+                        s += arr[j, i];
                     }
+                    
                 }
             }
-            return c;
+            return s;
         }
         static void Main(string[] args)
         {
@@ -86,9 +78,12 @@ namespace Завд._6_Вар._8
             int c = Convert.ToInt32(Console.ReadLine());
             float[,] matrix = getMatrix(r, c);
             printMatrix(matrix);
-            Console.WriteLine("Сума");
-            float[] sum = getSumOfMatrix(matrix);
-            printvec(sum);
+            float sum = getSumOfMatrix(matrix);
+            if (sum==0)
+            {
+                Console.WriteLine("Елементів що задовльняють умову не знайшлося, тому sum=0;");
+            }
+            Console.WriteLine("Відповідь: "+sum);
         }
     }
 }

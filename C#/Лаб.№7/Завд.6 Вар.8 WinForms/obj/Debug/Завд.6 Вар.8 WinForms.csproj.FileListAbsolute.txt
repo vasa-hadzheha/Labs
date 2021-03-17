@@ -1,0 +1,10 @@
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\bin\Debug\Завд.6 Вар.8 WinForms.exe.config
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\bin\Debug\Завд.6 Вар.8 WinForms.exe
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\bin\Debug\Завд.6 Вар.8 WinForms.pdb
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд.6 Вар.8 WinForms.csprojAssemblyReference.cache
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд._6_Вар._8_WinForms.Form1.resources
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд._6_Вар._8_WinForms.Properties.Resources.resources
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд.6 Вар.8 WinForms.csproj.GenerateResource.cache
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд.6 Вар.8 WinForms.csproj.CoreCompileInputs.cache
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд.6 Вар.8 WinForms.exe
+E:\Лабораторні роботи з програмування\Labs\C#\Лаб.№7\Завд.6 Вар.8 WinForms\obj\Debug\Завд.6 Вар.8 WinForms.pdb
