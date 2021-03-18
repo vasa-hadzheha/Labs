@@ -47,12 +47,14 @@ namespace Завд._5_Вар._8_WinForms
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.characteristic = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.menuStrip2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rowCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.columnCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.matrix)).BeginInit();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.characteristic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -60,7 +62,7 @@ namespace Завд._5_Вар._8_WinForms
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 28);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(973, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1146, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -71,7 +73,7 @@ namespace Завд._5_Вар._8_WinForms
             this.опціїToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(973, 28);
+            this.menuStrip2.Size = new System.Drawing.Size(1146, 28);
             this.menuStrip2.TabIndex = 1;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -105,12 +107,14 @@ namespace Завд._5_Вар._8_WinForms
             this.посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem.Name = "посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem";
             this.посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem.Size = new System.Drawing.Size(381, 26);
             this.посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem.Text = "Посортувати стовпці за характеристикою";
+            this.посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem.Click += new System.EventHandler(this.посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem_Click);
             // 
             // вихідToolStripMenuItem
             // 
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
             this.вихідToolStripMenuItem.Size = new System.Drawing.Size(381, 26);
             this.вихідToolStripMenuItem.Text = "Вихід";
+            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
             // rowCount
             // 
@@ -170,8 +174,10 @@ namespace Завд._5_Вар._8_WinForms
             // 
             this.matrix.AllowUserToOrderColumns = true;
             this.matrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.matrix.ColumnHeadersVisible = false;
             this.matrix.Location = new System.Drawing.Point(112, 262);
             this.matrix.Name = "matrix";
+            this.matrix.RowHeadersVisible = false;
             this.matrix.RowHeadersWidth = 51;
             this.matrix.RowTemplate.Height = 24;
             this.matrix.Size = new System.Drawing.Size(738, 217);
@@ -194,9 +200,9 @@ namespace Завд._5_Вар._8_WinForms
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 625);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 675);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(973, 26);
+            this.statusStrip1.Size = new System.Drawing.Size(1146, 26);
             this.statusStrip1.TabIndex = 9;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -209,18 +215,31 @@ namespace Завд._5_Вар._8_WinForms
             // characteristic
             // 
             this.characteristic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.characteristic.ColumnHeadersVisible = false;
             this.characteristic.Location = new System.Drawing.Point(112, 500);
             this.characteristic.Name = "characteristic";
+            this.characteristic.RowHeadersVisible = false;
             this.characteristic.RowHeadersWidth = 51;
             this.characteristic.RowTemplate.Height = 24;
             this.characteristic.Size = new System.Drawing.Size(737, 81);
             this.characteristic.TabIndex = 10;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(507, 57);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(627, 306);
+            this.dataGridView1.TabIndex = 11;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(973, 651);
+            this.ClientSize = new System.Drawing.Size(1146, 701);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.characteristic);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.matrix);
@@ -242,6 +261,7 @@ namespace Завд._5_Вар._8_WinForms
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.characteristic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,6 +286,7 @@ namespace Завд._5_Вар._8_WinForms
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.DataGridView characteristic;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

@@ -66,7 +66,7 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Ex3textBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -392,7 +392,7 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.tabPage3.Controls.Add(this.textBox6);
             this.tabPage3.Controls.Add(this.label15);
             this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.Ex3textBox);
             this.tabPage3.Controls.Add(this.label14);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
@@ -426,13 +426,14 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.button3.TabIndex = 2;
             this.button3.Text = "Answer";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox5
+            // Ex3textBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(196, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 1;
+            this.Ex3textBox.Location = new System.Drawing.Point(196, 31);
+            this.Ex3textBox.Name = "Ex3textBox";
+            this.Ex3textBox.Size = new System.Drawing.Size(100, 22);
+            this.Ex3textBox.TabIndex = 1;
             // 
             // label14
             // 
@@ -504,7 +505,7 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Ex3textBox;
         private System.Windows.Forms.Label label14;
     }
 }

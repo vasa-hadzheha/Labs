@@ -21,6 +21,8 @@ namespace Завд._5_Вар._8_WinForms
         {
             matrix.RowCount = (int)rowCount.Value;
             matrix.ColumnCount = (int)columnCount.Value;
+            dataGridView1.RowCount = (int)rowCount.Value;
+            dataGridView1.ColumnCount = (int)columnCount.Value;
             characteristic.RowCount = 1;
             characteristic.ColumnCount = (int)columnCount.Value;
         }
@@ -28,12 +30,14 @@ namespace Завд._5_Вар._8_WinForms
         private void rowCount_ValueChanged(object sender, EventArgs e)
         {
             matrix.RowCount = (int)rowCount.Value;
+            dataGridView1.RowCount = (int)rowCount.Value;
         }
 
         private void columnCount_ValueChanged(object sender, EventArgs e)
         {
             matrix.ColumnCount = (int)columnCount.Value;
             characteristic.ColumnCount = (int)columnCount.Value;
+            dataGridView1.ColumnCount = (int)columnCount.Value;
         }
 
         private void згенеруватиЕлементиToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,7 +47,7 @@ namespace Завд._5_Вар._8_WinForms
             {
                 for (int j = 0; j < matrix.ColumnCount; j++)
                 {
-                    matrix[j, i].Value = random.Next(1, 11);
+                    matrix[j, i].Value = random.Next(-20, 15);
                 }
             }
             toolStripStatusLabel1.Text = "Згенеровано масив";
@@ -62,36 +66,82 @@ namespace Завд._5_Вар._8_WinForms
             }
             //Задаємо характеристику й добавляємо суму стовпців у новий масив
             double s = 0;
-            int k = 0;
             double[] c = new double[(int)columnCount.Value];
-            for (int i = 0; i < (int)columnCount.Value; i++)
+            for (int i = 0; i < arr.GetLength(1); i++)
             {
-                for (int j = 0; j < (int)rowCount.Value; j++)
+                for (int j = 0; j < arr.GetLength(0); j++)
                 {
                     if (arr[j, i] < 0 && arr[j, i] % 2 != 0)
                     {
-                        s += Math.Abs(arr[j, i]);
+                        s += Math.Abs(arr[j,i]);
                     }
                     if (j == arr.GetLength(0) - 1)
                     {
-                        c[k] = s;
+                        characteristic[i, 0].Value = s;
                         s = 0;
-                        k += 1;
                     }
                 }
             }
+            toolStripStatusLabel1.Text = "Задана характеристика";
+        }
 
-            for (int i = 0; i < c.GetLength(0)-1; i++)
+        private void посортуватиСтовпціЗаХарактеристикоюToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // копія матриці
+            double[,] arr = new double[matrix.RowCount, matrix.ColumnCount];
+            for (int i = 0; i < matrix.RowCount; i++)
             {
-                for (int j = 0; j < c.GetLength(0); j++)
+                for (int j = 0; j < matrix.ColumnCount; j++)
                 {
-
+                    arr[i, j] = Convert.ToDouble(matrix[j, i].Value);
                 }
             }
-            for (int i = 0; i < (int)columnCount.Value; i++)
+            // Копія матриці характеристика
+            double[,] c = new double[characteristic.RowCount, characteristic.ColumnCount];
+
+            for (int i = 0; i < matrix.RowCount; i++)
             {
-                characteristic[1,i].Value= c[i];
+                    c[0, i] = Convert.ToDouble(characteristic[i, 0].Value);
             }
+            //Сортуємо матрицю
+            for (int i = 0; i < characteristic.RowCount - 1; i++)
+            {
+                int maxInd = i;
+                for (int j = i + 1; j < characteristic.RowCount; j++)
+                {
+                    if (arr[0,j] > arr[0,maxInd])
+                    {
+                        maxInd = j;
+                    }
+                    if (i != maxInd)
+                    {
+                        //сортуємо одновимірний масив
+                        double z = c[0,i];
+                        c[0,i] = c[0,maxInd];
+                        c[0,maxInd] = z;
+                        //міняємо стовпці матриці
+                        for (int m = 0; m < arr.GetLength(1); m++)
+                        {
+                            double k = arr[m, i];
+                            arr[m, i] = arr[m, maxInd];
+                            arr[m, maxInd] = k;
+                        }
+
+                    }
+                }
+            }
+            for (int i = 0; i < dataGridView1.RowCount; i++)
+            {
+                for (int j = 0; j < dataGridView1.ColumnCount; j++)
+                {
+                    dataGridView1[j, i].Value = arr[i, j];
+                }
+            }
+        }
+
+        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

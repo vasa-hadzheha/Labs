@@ -1,0 +1,7 @@
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\bin\Debug\Проба2.exe.config
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\bin\Debug\Проба2.exe
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\bin\Debug\Проба2.pdb
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\obj\Debug\Проба2.csprojAssemblyReference.cache
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\obj\Debug\Проба2.csproj.CoreCompileInputs.cache
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\obj\Debug\Проба2.exe
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Проба2\obj\Debug\Проба2.pdb
