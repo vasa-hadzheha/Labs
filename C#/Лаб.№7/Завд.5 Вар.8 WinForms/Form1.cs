@@ -66,7 +66,6 @@ namespace Завд._5_Вар._8_WinForms
             }
             //Задаємо характеристику й добавляємо суму стовпців у новий масив
             double s = 0;
-            double[] c = new double[(int)columnCount.Value];
             for (int i = 0; i < arr.GetLength(1); i++)
             {
                 for (int j = 0; j < arr.GetLength(0); j++)
@@ -97,39 +96,40 @@ namespace Завд._5_Вар._8_WinForms
                 }
             }
             // Копія матриці характеристика
-            double[,] c = new double[characteristic.RowCount, characteristic.ColumnCount];
+            double[,] c = new double[1, characteristic.ColumnCount];
 
-            for (int i = 0; i < matrix.RowCount; i++)
+            for (int i = 0; i < characteristic.ColumnCount; i++)
             {
-                    c[0, i] = Convert.ToDouble(characteristic[i, 0].Value);
+                c[0, i] = Convert.ToDouble(characteristic[i, 0].Value);
             }
             //Сортуємо матрицю
-            for (int i = 0; i < characteristic.RowCount - 1; i++)
+            for (int i = 0; i < c.GetLength(1) - 1; i++)
             {
                 int maxInd = i;
-                for (int j = i + 1; j < characteristic.RowCount; j++)
+                for (int j = i + 1; j < c.GetLength(1); j++)
                 {
-                    if (arr[0,j] > arr[0,maxInd])
+                    if (c[0, j] > c[0, maxInd])
                     {
                         maxInd = j;
                     }
-                    if (i != maxInd)
+                }
+                if (i != maxInd)
+                {
+                    //сортуємо одновимірний масив
+                    double z = c[0, i];
+                    c[0, i] = c[0, maxInd];
+                    c[0, maxInd] = z;
+                    //міняємо стовпці матриці
+                    for (int m = 0; m < arr.GetLength(0); m++)
                     {
-                        //сортуємо одновимірний масив
-                        double z = c[0,i];
-                        c[0,i] = c[0,maxInd];
-                        c[0,maxInd] = z;
-                        //міняємо стовпці матриці
-                        for (int m = 0; m < arr.GetLength(1); m++)
-                        {
-                            double k = arr[m, i];
-                            arr[m, i] = arr[m, maxInd];
-                            arr[m, maxInd] = k;
-                        }
-
+                        double k = arr[m, i];
+                        arr[m, i] = arr[m, maxInd];
+                        arr[m, maxInd] = k;
                     }
+
                 }
             }
+            //передаємо відсортовану матрицю в dataGrid
             for (int i = 0; i < dataGridView1.RowCount; i++)
             {
                 for (int j = 0; j < dataGridView1.ColumnCount; j++)

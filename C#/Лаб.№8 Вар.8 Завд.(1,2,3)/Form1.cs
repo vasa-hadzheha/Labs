@@ -34,11 +34,13 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             double y1 = Convert.ToDouble(y_1.Text);
             double x2 = Convert.ToDouble(x_2.Text);
             double y2 = Convert.ToDouble(y_2.Text);
-            if (Funkcions.angle(x1,y1,x2,y2)<90)
+            double x3 = Convert.ToDouble(x_3.Text);
+            double y3 = Convert.ToDouble(y_3.Text);
+            if (Funkcions.angle(x1,y1,x2,y2,x3,y3)<90)
             {
                 textBox8.Text = "гострокутний";
             }
-            else if (Funkcions.angle(x1, y1, x2, y2)==90)
+            else if (Funkcions.angle(x1, y1, x2, y2, x3, y3) == 90)
             {
                 textBox8.Text = "прямокутний";
             }
@@ -48,18 +50,13 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             }
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click_1(object sender, EventArgs e)
         {
             int x0 = 0;
             int x2 = 9;
             int x1 = 9;
             Console.Write("n=");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int n = Convert.ToInt32(textBox5.Text);
             int xn = 0;
             for (int i = 3; i < n + 1; i++)
             {
@@ -67,8 +64,8 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
                 x0 = x1;
                 x1 = x2;
                 x2 = xn;
-
             }
+            textBox6.Text = xn.ToString();
         }
     }
 }

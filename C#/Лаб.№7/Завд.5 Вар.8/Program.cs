@@ -32,7 +32,7 @@ namespace Завд._5_Вар._8
             {
                 for (int j = 0; j < arr.GetLength(1); j++)
                 {
-                    arr[i, j] = rand.Next(-10, 20);
+                    arr[i, j] = rand.Next(-20, 10);
                 }
             }
             return arr;
@@ -78,30 +78,30 @@ namespace Завд._5_Вар._8
         static float[,] sortMatrix(float[,] arr,float []characteristic)
         {
 
-            for (int i = 0; i < characteristic.GetLength(0)-1; i++)
+            for (int i = 0; i < characteristic.Length-1; i++)
             {
                 int maxInd = i;
-                for (int j = i + 1; j < characteristic.GetLength(0); j++)
+                for (int j = i + 1; j < characteristic.Length; j++)
                 {
                     if (characteristic[j] > characteristic[maxInd])
                     {
                         maxInd = j;
                     }
-                    if (i != maxInd)
+                }
+                if (i != maxInd)
+                {
+                    //сортуємо одновимірний масив
+                    float z = characteristic[i];
+                    characteristic[i] = characteristic[maxInd];
+                    characteristic[maxInd] = z;
+                    //міняємо стовпці матриці
+                    for (int m = 0; m < arr.GetLength(0); m++)
                     {
-                        //сортуємо одновимірний масив
-                        float z = characteristic[i];
-                        characteristic[i] = characteristic[maxInd];
-                        characteristic[maxInd] = z;
-                        //міняємо стовпці матриці
-                        for (int m = 0; m < arr.GetLength(1); m++)
-                        {
-                            float k = arr[m, i];
-                            arr[m,i] = arr[m, maxInd];
-                            arr[m, maxInd] = k;
-                        }
-
+                        float k = arr[m, i];
+                        arr[m, i] = arr[m, maxInd];
+                        arr[m, maxInd] = k;
                     }
+
                 }
             }
             

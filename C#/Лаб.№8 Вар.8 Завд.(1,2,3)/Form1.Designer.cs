@@ -63,11 +63,11 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
-            this.Ex3textBox = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -390,10 +390,10 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.textBox6);
+            this.tabPage3.Controls.Add(this.textBox5);
             this.tabPage3.Controls.Add(this.label15);
-            this.tabPage3.Controls.Add(this.button3);
-            this.tabPage3.Controls.Add(this.Ex3textBox);
             this.tabPage3.Controls.Add(this.label14);
+            this.tabPage3.Controls.Add(this.button3);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -402,47 +402,47 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.tabPage3.Text = "Завд.3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(107, 130);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 12;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(39, 130);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(62, 17);
-            this.label15.TabIndex = 11;
-            this.label15.Text = "Answer :";
-            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(479, 34);
+            this.button3.Location = new System.Drawing.Point(542, 141);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 42);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Answer";
+            this.button3.Size = new System.Drawing.Size(131, 53);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // Ex3textBox
-            // 
-            this.Ex3textBox.Location = new System.Drawing.Point(196, 31);
-            this.Ex3textBox.Name = "Ex3textBox";
-            this.Ex3textBox.Size = new System.Drawing.Size(100, 22);
-            this.Ex3textBox.TabIndex = 1;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(39, 34);
+            this.label14.Location = new System.Drawing.Point(6, 55);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(151, 17);
-            this.label14.TabIndex = 0;
+            this.label14.TabIndex = 1;
             this.label14.Text = "Вкажіть n-ий елемент";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(37, 251);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(73, 17);
+            this.label15.TabIndex = 2;
+            this.label15.Text = "Відповідь:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(181, 50);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(139, 22);
+            this.textBox5.TabIndex = 3;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(136, 248);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(154, 22);
+            this.textBox6.TabIndex = 4;
             // 
             // Form1
             // 
@@ -454,7 +454,6 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -472,7 +471,6 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label z;
@@ -502,11 +500,12 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox Ex3textBox;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Button button3;
     }
 }
 

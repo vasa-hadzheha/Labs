@@ -10,21 +10,24 @@ namespace Проба2
     {
         static void Main(string[] args)
         {
-            int x0 = 0;
-            int x2 = 9;
-            int x1 = 9;
-            Console.Write("n=");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int xn=0;
-            for (int i = 3; i < n+1; i++)
-            {
-                xn = x2 + 4 * x0;
-                x0 = x1;
-                x1 = x2;
-                x2 = xn;
-
-            }
-            Console.WriteLine(xn);
+            int x1 = 0;
+            int y1 = 0;
+            int x2 = 3;
+            int y2 = 0;
+            int x3 = 0;
+            int y3 = 3;
+            double a1 = x2 - x1;
+            double a2 = y2 - y1;
+            double b1 = x3 - x1;
+            double b2 = y3 - y1;
+            double ab = a1 * b1 + a2 * b2;
+            Console.WriteLine(ab);
+            double mod_a = Math.Sqrt(a1 * a1 + a2 * a2);
+            Console.WriteLine(mod_a);
+            double mod_b = Math.Sqrt(b1 * b1 + b2 * b2);
+            Console.WriteLine(mod_b);
+            double angle =((Math.Acos(ab / (mod_a * mod_b))) *180)/Math.PI;
+            Console.WriteLine(angle);
         }
     }
 }

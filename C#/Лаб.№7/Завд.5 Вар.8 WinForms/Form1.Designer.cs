@@ -118,7 +118,7 @@ namespace Завд._5_Вар._8_WinForms
             // 
             // rowCount
             // 
-            this.rowCount.Location = new System.Drawing.Point(276, 55);
+            this.rowCount.Location = new System.Drawing.Point(187, 55);
             this.rowCount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -136,7 +136,7 @@ namespace Завд._5_Вар._8_WinForms
             // 
             // columnCount
             // 
-            this.columnCount.Location = new System.Drawing.Point(276, 110);
+            this.columnCount.Location = new System.Drawing.Point(187, 105);
             this.columnCount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -155,7 +155,7 @@ namespace Завд._5_Вар._8_WinForms
             // lable1
             // 
             this.lable1.AutoSize = true;
-            this.lable1.Location = new System.Drawing.Point(133, 57);
+            this.lable1.Location = new System.Drawing.Point(40, 55);
             this.lable1.Name = "lable1";
             this.lable1.Size = new System.Drawing.Size(111, 17);
             this.lable1.TabIndex = 4;
@@ -164,7 +164,7 @@ namespace Завд._5_Вар._8_WinForms
             // lable2
             // 
             this.lable2.AutoSize = true;
-            this.lable2.Location = new System.Drawing.Point(133, 110);
+            this.lable2.Location = new System.Drawing.Point(40, 110);
             this.lable2.Name = "lable2";
             this.lable2.Size = new System.Drawing.Size(125, 17);
             this.lable2.TabIndex = 5;
@@ -175,7 +175,7 @@ namespace Завд._5_Вар._8_WinForms
             this.matrix.AllowUserToOrderColumns = true;
             this.matrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.matrix.ColumnHeadersVisible = false;
-            this.matrix.Location = new System.Drawing.Point(112, 262);
+            this.matrix.Location = new System.Drawing.Point(110, 331);
             this.matrix.Name = "matrix";
             this.matrix.RowHeadersVisible = false;
             this.matrix.RowHeadersWidth = 51;
@@ -216,7 +216,7 @@ namespace Завд._5_Вар._8_WinForms
             // 
             this.characteristic.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.characteristic.ColumnHeadersVisible = false;
-            this.characteristic.Location = new System.Drawing.Point(112, 500);
+            this.characteristic.Location = new System.Drawing.Point(97, 570);
             this.characteristic.Name = "characteristic";
             this.characteristic.RowHeadersVisible = false;
             this.characteristic.RowHeadersWidth = 51;
@@ -227,11 +227,11 @@ namespace Завд._5_Вар._8_WinForms
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(507, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(351, 31);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(627, 306);
+            this.dataGridView1.Size = new System.Drawing.Size(795, 282);
             this.dataGridView1.TabIndex = 11;
             // 
             // Form1
