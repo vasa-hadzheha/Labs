@@ -1,0 +1,7 @@
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\bin\Debug\Модульна робота.exe.config
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\bin\Debug\Модульна робота.exe
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\bin\Debug\Модульна робота.pdb
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\obj\Debug\Модульна робота.csprojAssemblyReference.cache
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\obj\Debug\Модульна робота.csproj.CoreCompileInputs.cache
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\obj\Debug\Модульна робота.exe
+E:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Модульна робота\obj\Debug\Модульна робота.pdb
