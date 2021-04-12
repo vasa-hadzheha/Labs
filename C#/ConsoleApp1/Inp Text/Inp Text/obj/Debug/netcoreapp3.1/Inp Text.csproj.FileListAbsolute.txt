@@ -1,0 +1,13 @@
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\bin\Debug\netcoreapp3.1\Inp Text.exe
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\bin\Debug\netcoreapp3.1\Inp Text.deps.json
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\bin\Debug\netcoreapp3.1\Inp Text.runtimeconfig.json
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\bin\Debug\netcoreapp3.1\Inp Text.runtimeconfig.dev.json
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\bin\Debug\netcoreapp3.1\Inp Text.dll
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\bin\Debug\netcoreapp3.1\Inp Text.pdb
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.csprojAssemblyReference.cache
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.AssemblyInfoInputs.cache
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.AssemblyInfo.cs
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.csproj.CoreCompileInputs.cache
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.dll
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.pdb
+D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Inp Text\Inp Text\obj\Debug\netcoreapp3.1\Inp Text.genruntimeconfig.cache
