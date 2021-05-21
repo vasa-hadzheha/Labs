@@ -74,21 +74,21 @@ namespace Робота_з_файлами
             // зберегтиToolStripMenuItem
             // 
             this.зберегтиToolStripMenuItem.Name = "зберегтиToolStripMenuItem";
-            this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.зберегтиToolStripMenuItem.Text = "зберегти";
             this.зберегтиToolStripMenuItem.Click += new System.EventHandler(this.зберегтиToolStripMenuItem_Click);
             // 
             // завантажитиToolStripMenuItem
             // 
             this.завантажитиToolStripMenuItem.Name = "завантажитиToolStripMenuItem";
-            this.завантажитиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.завантажитиToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.завантажитиToolStripMenuItem.Text = "завантажити";
             this.завантажитиToolStripMenuItem.Click += new System.EventHandler(this.завантажитиToolStripMenuItem_Click);
             // 
             // вихідToolStripMenuItem
             // 
             this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
-            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.вихідToolStripMenuItem.Text = "вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
@@ -104,14 +104,14 @@ namespace Робота_з_файлами
             // знайтиСумуToolStripMenuItem
             // 
             this.знайтиСумуToolStripMenuItem.Name = "знайтиСумуToolStripMenuItem";
-            this.знайтиСумуToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.знайтиСумуToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.знайтиСумуToolStripMenuItem.Text = "знайти суму";
             this.знайтиСумуToolStripMenuItem.Click += new System.EventHandler(this.знайтиСумуToolStripMenuItem_Click);
             // 
             // згенеруватиToolStripMenuItem
             // 
             this.згенеруватиToolStripMenuItem.Name = "згенеруватиToolStripMenuItem";
-            this.згенеруватиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.згенеруватиToolStripMenuItem.Size = new System.Drawing.Size(177, 26);
             this.згенеруватиToolStripMenuItem.Text = "згенерувати";
             this.згенеруватиToolStripMenuItem.Click += new System.EventHandler(this.згенеруватиToolStripMenuItem_Click);
             // 
@@ -146,12 +146,12 @@ namespace Робота_з_файлами
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
-            this.dataGridView1.Location = new System.Drawing.Point(175, 166);
+            this.dataGridView1.Location = new System.Drawing.Point(36, 166);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(595, 169);
+            this.dataGridView1.Size = new System.Drawing.Size(752, 169);
             this.dataGridView1.TabIndex = 3;
             // 
             // openFileDialog1
