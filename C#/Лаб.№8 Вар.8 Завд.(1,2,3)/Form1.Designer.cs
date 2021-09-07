@@ -63,11 +63,11 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -402,24 +402,19 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.tabPage3.Text = "Завд.3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // textBox6
             // 
-            this.button3.Location = new System.Drawing.Point(542, 141);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 53);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.textBox6.Location = new System.Drawing.Point(136, 248);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(154, 22);
+            this.textBox6.TabIndex = 4;
             // 
-            // label14
+            // textBox5
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 55);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(151, 17);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Вкажіть n-ий елемент";
+            this.textBox5.Location = new System.Drawing.Point(181, 50);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(139, 22);
+            this.textBox5.TabIndex = 3;
             // 
             // label15
             // 
@@ -430,25 +425,30 @@ namespace Лаб._5_Вар._8_Завд._1_2_3_
             this.label15.TabIndex = 2;
             this.label15.Text = "Відповідь:";
             // 
-            // textBox5
+            // label14
             // 
-            this.textBox5.Location = new System.Drawing.Point(181, 50);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(139, 22);
-            this.textBox5.TabIndex = 3;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 55);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(151, 17);
+            this.label14.TabIndex = 1;
+            this.label14.Text = "Вкажіть n-ий елемент";
             // 
-            // textBox6
+            // button3
             // 
-            this.textBox6.Location = new System.Drawing.Point(136, 248);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 22);
-            this.textBox6.TabIndex = 4;
+            this.button3.Location = new System.Drawing.Point(542, 141);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(131, 53);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(814, 441);
             this.Controls.Add(this.tabControl1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";

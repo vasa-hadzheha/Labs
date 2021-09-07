@@ -36,8 +36,9 @@ namespace Мінне_поле
                 Console.WriteLine();
             }
         }
-        static bool play(int[,] Matrix, int stepsCount)
+        static bool play(int[,] Matrix, int stepsCount,int lives=1)
         {
+            int loseTimes = 0;
             for (int i = 0; i < stepsCount; i++)
             {
                 Console.Write("row=");
@@ -47,7 +48,11 @@ namespace Мінне_поле
                 if (Matrix[row - 1, col - 1] == 1)
                 {
                     Console.WriteLine("Boom");
-                    return false;
+                    loseTimes++;
+                    if (loseTimes == lives)
+                    {
+                        return false;
+                    }
                 }
                 else
                 {
@@ -66,7 +71,7 @@ namespace Мінне_поле
             int c = Convert.ToInt32(Console.ReadLine());
             int[,] matrix = getMatrix(r, c);
             printMatrix(matrix,true);
-            if (play(matrix, 3))
+            if (play(matrix, 3,2))
                 Console.WriteLine("Win!");
             else 
             {

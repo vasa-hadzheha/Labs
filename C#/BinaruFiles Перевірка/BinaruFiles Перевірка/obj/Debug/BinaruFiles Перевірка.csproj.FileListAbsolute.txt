@@ -1,0 +1,10 @@
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\bin\Debug\BinaruFiles Перевірка.exe.config
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\bin\Debug\BinaruFiles Перевірка.exe
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\bin\Debug\BinaruFiles Перевірка.pdb
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles Перевірка.csprojAssemblyReference.cache
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles_Перевірка.Form1.resources
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles_Перевірка.Properties.Resources.resources
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles Перевірка.csproj.GenerateResource.cache
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles Перевірка.csproj.CoreCompileInputs.cache
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles Перевірка.exe
+D:\Лабораторні роботи з програмування\Labs\C#\BinaruFiles Перевірка\BinaruFiles Перевірка\obj\Debug\BinaruFiles Перевірка.pdb

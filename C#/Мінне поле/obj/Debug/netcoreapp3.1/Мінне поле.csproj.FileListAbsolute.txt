@@ -24,3 +24,16 @@ D:\Лабораторні роботи з програмування\Labs\C#\Con
 D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.dll
 D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.pdb
 D:\Лабораторні роботи з програмування\Labs\C#\ConsoleApp1\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.genruntimeconfig.cache
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\bin\Debug\netcoreapp3.1\Мінне поле.exe
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\bin\Debug\netcoreapp3.1\Мінне поле.deps.json
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\bin\Debug\netcoreapp3.1\Мінне поле.runtimeconfig.json
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\bin\Debug\netcoreapp3.1\Мінне поле.runtimeconfig.dev.json
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\bin\Debug\netcoreapp3.1\Мінне поле.dll
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\bin\Debug\netcoreapp3.1\Мінне поле.pdb
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.csproj.AssemblyReference.cache
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.AssemblyInfoInputs.cache
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.AssemblyInfo.cs
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.csproj.CoreCompileInputs.cache
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.dll
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.pdb
+D:\Лабораторні роботи з програмування\Labs\C#\Мінне поле\obj\Debug\netcoreapp3.1\Мінне поле.genruntimeconfig.cache

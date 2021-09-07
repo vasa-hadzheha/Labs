@@ -29,9 +29,9 @@ namespace Робота_з_файлами_та_гарфіком
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.завантажитиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,16 +44,15 @@ namespace Робота_з_файлами_та_гарфіком
             this.sinxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cosxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.x2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.x3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.x3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
@@ -70,7 +69,7 @@ namespace Робота_з_файлами_та_гарфіком
             this.операціїToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(929, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1068, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -87,14 +86,14 @@ namespace Робота_з_файлами_та_гарфіком
             // завантажитиToolStripMenuItem
             // 
             this.завантажитиToolStripMenuItem.Name = "завантажитиToolStripMenuItem";
-            this.завантажитиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.завантажитиToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.завантажитиToolStripMenuItem.Text = "завантажити";
             this.завантажитиToolStripMenuItem.Click += new System.EventHandler(this.завантажитиToolStripMenuItem_Click);
             // 
             // зберегтиToolStripMenuItem
             // 
             this.зберегтиToolStripMenuItem.Name = "зберегтиToolStripMenuItem";
-            this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.зберегтиToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.зберегтиToolStripMenuItem.Text = "зберегти";
             this.зберегтиToolStripMenuItem.Click += new System.EventHandler(this.зберегтиToolStripMenuItem_Click);
             // 
@@ -136,7 +135,7 @@ namespace Робота_з_файлами_та_гарфіком
             this.x2ToolStripMenuItem,
             this.x3ToolStripMenuItem});
             this.графікФункціїToolStripMenuItem.Name = "графікФункціїToolStripMenuItem";
-            this.графікФункціїToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.графікФункціїToolStripMenuItem.Size = new System.Drawing.Size(220, 26);
             this.графікФункціїToolStripMenuItem.Text = "графік функції";
             // 
             // sinxToolStripMenuItem
@@ -149,16 +148,23 @@ namespace Робота_з_файлами_та_гарфіком
             // cosxToolStripMenuItem
             // 
             this.cosxToolStripMenuItem.Name = "cosxToolStripMenuItem";
-            this.cosxToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.cosxToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.cosxToolStripMenuItem.Text = "cos(x)";
             this.cosxToolStripMenuItem.Click += new System.EventHandler(this.cosxToolStripMenuItem_Click);
             // 
             // x2ToolStripMenuItem
             // 
             this.x2ToolStripMenuItem.Name = "x2ToolStripMenuItem";
-            this.x2ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.x2ToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.x2ToolStripMenuItem.Text = "x^2";
             this.x2ToolStripMenuItem.Click += new System.EventHandler(this.x2ToolStripMenuItem_Click);
+            // 
+            // x3ToolStripMenuItem
+            // 
+            this.x3ToolStripMenuItem.Name = "x3ToolStripMenuItem";
+            this.x3ToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
+            this.x3ToolStripMenuItem.Text = "x^3";
+            this.x3ToolStripMenuItem.Click += new System.EventHandler(this.x3ToolStripMenuItem_Click);
             // 
             // dataGridView1
             // 
@@ -217,13 +223,6 @@ namespace Робота_з_файлами_та_гарфіком
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "5";
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(773, 58);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 6;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -244,28 +243,20 @@ namespace Робота_з_файлами_та_гарфіком
             // 
             // chart1
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart1.Legends.Add(legend9);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(77, 304);
             this.chart1.Name = "chart1";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart1.Series.Add(series9);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(663, 300);
             this.chart1.TabIndex = 9;
             this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
-            // 
-            // x3ToolStripMenuItem
-            // 
-            this.x3ToolStripMenuItem.Name = "x3ToolStripMenuItem";
-            this.x3ToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.x3ToolStripMenuItem.Text = "x^3";
-            this.x3ToolStripMenuItem.Click += new System.EventHandler(this.x3ToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
@@ -275,11 +266,10 @@ namespace Робота_з_файлами_та_гарфіком
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(929, 609);
+            this.ClientSize = new System.Drawing.Size(1068, 680);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -314,7 +304,6 @@ namespace Робота_з_файлами_та_гарфіком
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;

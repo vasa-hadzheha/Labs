@@ -18,12 +18,6 @@ namespace Робота_з_файлами_та_гарфіком
             InitializeComponent();
         }
 
-        private void chart1_Click(object sender, EventArgs e)
-        {
-            double a = Convert.ToDouble(textBox3.Text);
-            textBox2.Text = a.ToString();
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             dataGridView1.ColumnCount = (int)numericUpDown1.Value;
