@@ -10,6 +10,7 @@ main{
     /* align-items: baseline;
     flex-direction: row; */
 }
+
 .flex_row_2{
     border: 5px solid rgb(255, 8, 0);
     display: flex;
