@@ -1,15 +1,17 @@
+//Arrays 
 var randomBodyParts = ["ear","eyes","nose","head"];
 var randomAdjectives = ["Boring","awful","stupid","nasty"];
 var randomWords = ["Monkey","Fly","Rat","Bug"];
 var randomAnimalBodyParts = ["tail","leather","claw"];
-var randomBodyPart = randomBodyParts[Math.floor(Math.random()*3)];
-var randomAdjective = randomAdjectives[Math.floor(Math.random()*3)];
-var randomWord = randomWords[Math.floor(Math.random()*3)];
-var randomAnimalBodyPart = randomAnimalBodyParts[Math.floor(Math.random()*2)];
+//randomaizer Math.floor(Math.random()*3) "3 is not included we have random numbers from 0 to 2" 
+var randomBodyPart = randomBodyParts[Math.floor(Math.random()*4)];
+var randomAdjective = randomAdjectives[Math.floor(Math.random()*4)];
+var randomWord = randomWords[Math.floor(Math.random()*4)];
+var randomAnimalBodyPart = randomAnimalBodyParts[Math.floor(Math.random()*3)];
 var resalt = ["Your", randomBodyPart ,"is more", randomAdjective, "than a" ,randomWord,"'s", randomAnimalBodyPart, "!!!"].join(" ");
 resalt;
 
-
+//object 
 var scores = {
     Vasyl:100,
     Alex:95,

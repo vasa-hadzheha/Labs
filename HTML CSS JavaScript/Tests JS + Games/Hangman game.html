@@ -21,8 +21,10 @@
     }
     var remainingLetters = word.length;
     while(remainingLetters>0){
+        // join all elements in answerArray and put between them what is in the gaps 
         alert(answerArray.join(" "));
         var guess = prompt("Guess a letter, or click Cancel to stop playing.");
+        //if guess is null it means playel click on cancel
         if(guess=== null){
             break
         }else if(guess.length!=1){
