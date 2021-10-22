@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
 </head>
 <body>
-    <h1 id="heading"> Hello world!</h1>
+    <h1 id="heading">0</h1>
     <script>
          var direction = 'right';
     var offset = 0;
@@ -48,7 +48,7 @@
         }
       } else if (direction === 'up') {
         $("#heading").offset({ top: offset });
-        //our Y coordinates`s value were 200 and we reduce it on 1 to make him move back(up)
+        //our Y coordinates`s value were 200 and we reduce it on 1 to make him move back,(up)
         offset--;
         if (offset < 0) {
           //set value 0 that our header  move righr on 1pixel
@@ -58,8 +58,29 @@
         }
       }
     };
-    //push function one time in 30 miliseconds (or less,faster)
-    setInterval(moveHeading, 30);
+
+    var speed = 120;
+    //push function one time in seted miliseconds
+    var intervalId=setInterval(moveHeading, speed);
+    console.log(intervalId);
+    var i=1;
+    //function to stop moving of header
+    
+    function clickHandler (event){
+      
+      $("#heading").text(i++)
+      console.log("Click! "+event.pageX+" "+event.pageY);
+      speed/=2;
+      if(parseInt($("#heading").text())>10){
+          setTimeout(function(){$("#heading").text("You win!");},500)
+          clearInterval(intervalId);
+          console.log(intervalId);
+        }else {
+          intervalId = setInterval(moveHeading, speed)
+          console.log(intervalId)
+        }
+    }
+    $("h1").click(clickHandler);
     </script>
 </body>
 </html>
