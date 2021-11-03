@@ -3,12 +3,13 @@ function timeUp(){
 }
 var id = setTimeout(timeUp,4000);
 
+//print id of setTimeout on web page on h1
 let myElm = document.createElement("h1"); 
 document.body.appendChild(myElm);
 myElm.innerHTML = id; 
 clearTimeout(id);
 
-
+// print counter in <p>
 var counter = 1;
 let sentece = document.createElement("p");
 document.body.appendChild(sentece);
@@ -16,6 +17,12 @@ function printMessage(){
     sentece.innerHTML+= counter+"<br/>";
     counter++;
 }
-var intervalId = setInterval(printMessage,1000);
+//do func every 500 miliseconds
+var intervalId = setInterval(printMessage,500);
 
-//setTimeout(clearInterval(intervalId),15000);
+function sl (){
+    clearInterval(intervalId)
+}
+
+//stop func printMessage after 10 seconds
+setTimeout(sl,10000);
