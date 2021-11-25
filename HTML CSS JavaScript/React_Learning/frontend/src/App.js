@@ -1,24 +1,18 @@
 import logo from './logo.svg';
-import './App.css';
+import { DatePicker, Divider, message } from 'antd';
+import 'antd/dist/antd.css';
+import './index.css';
+
+function heandleChange(date){
+  alert (date) 
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-         Good evening!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Divider>test</Divider>,
+    <DatePicker allowClear={false} onChange={heandleChange}/>
+    </>
   );
 }
 
