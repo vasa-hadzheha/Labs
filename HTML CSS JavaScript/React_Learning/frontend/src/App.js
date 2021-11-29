@@ -1,17 +1,12 @@
-import logo from './logo.svg';
-import { DatePicker, Divider, message } from 'antd';
 import 'antd/dist/antd.css';
-import './index.css';
-
-function heandleChange(date){
-  alert (date) 
-}
+import useRoutes from './components/routes/routes';
 
 function App() {
+
+  const routes = useRoutes();
   return (
     <>
-    <Divider>test</Divider>,
-    <DatePicker allowClear={false} onChange={heandleChange}/>
+      {routes}
     </>
   );
 }
