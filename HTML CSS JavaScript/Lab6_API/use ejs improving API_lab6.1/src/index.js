@@ -1,21 +1,37 @@
 const express = require("express");
 const options = require("./options");
 const carRouter = require("./cars");
+const devRouter = require("./for_devs")
 
 const app = express();
 
 app.use(express.urlencoded({extended: false}));
 app.use(express.json());
 
+// чи можне це переставити в папку for devs???
 app.set("view engine", "ejs");
 app.use(express.static('./public'));
 app.use("/images", express.static('./files/img'));
+app.use("/screen", express.static('./files/screenshots_API'));
+//--------------------------------------------------------------
 
+// app.get("/technical-information", (req, res) => {
+//     res.render("Information_and_API",{
+
+//     });
+// });
+// app.get("/author-information", (req, res) => {
+//     res.render("author_Info",{
+
+//     });
+// });
+
+app.use("/for-developers", devRouter)
 app.use("/cars", carRouter);
 
 app.all("*",(req, res)=>{
     res.render("NotFound404", {
-        url: "../files/img/404.png",
+        url: "./images/404.png",
         text: "Page not found"
     });
 });

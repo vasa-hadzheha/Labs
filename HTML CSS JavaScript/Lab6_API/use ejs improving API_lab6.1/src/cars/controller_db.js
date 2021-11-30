@@ -43,6 +43,7 @@ const carController = {
         try {
             let deletedCar = await Car.findByPk(parseInt(req.params.id));
             if (deletedCar) {
+                await deletedCar.destroy();
                 res.send(deletedCar);
             } else res.status(404).send("Not Found");
         } catch (e) {

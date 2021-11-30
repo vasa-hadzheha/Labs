@@ -46,6 +46,25 @@ const carController = {
                 if (req.body[key]) updatedCar[key] = req.body[key];
             res.send(updatedCar);
         } else res.status(404).send("Not Found");
+    },
+    put: (req, res)=>{
+        let newCars = [];
+    
+        //check including of id
+        for (let i = 0; i < req.body.length; i++) {
+            if(req.body[i].id === undefined){
+                req.body[i].id=Number(Date.now());
+            }
+        }
+    
+        for (let i = 0; i < req.body.length; i++) {
+            newCars.push(req.body[i]);
+        } 
+    
+        for (let i = 0; i < newCars.length; i++) {
+            Cars.push(newCars[i]);
+        }
+        res.send(newCars)
     }
 };
 

@@ -58,6 +58,30 @@ const carController = {
             res.status(500).send(e);
         }
     },
+    put: async(req, res)=>{
+        try {
+            let newCars = [];
+        
+            //check including of id
+            for (let i = 0; i < req.body.length; i++) {
+                if(req.body[i].id === undefined){
+                    req.body[i].id=Number(Date.now());
+                }
+            }
+        
+            for (let i = 0; i < req.body.length; i++) {
+                newCars.push(req.body[i]);
+            } 
+        
+            for (let i = 0; i < newCars.length; i++) {
+                await Cars.create(newCars[i]);
+            }
+            res.send(newCars)
+        } catch (e) {
+            console.log(e);
+            res.status(500).send(e);
+        }
+    },
     patch: async(req, res)=>{
         try {
             let updatedCar = await Cars.update((car) => car.id === parseInt(req.params.id), req.body);

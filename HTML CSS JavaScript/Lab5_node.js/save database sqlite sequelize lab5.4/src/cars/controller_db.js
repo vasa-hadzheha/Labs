@@ -43,6 +43,7 @@ const carController = {
         try {
             let deletedCar = await Car.findByPk(parseInt(req.params.id));
             if (deletedCar) {
+                await deletedCar.destroy(deletedCar);
                 res.send(deletedCar);
             } else res.status(404).send("Not Found");
         } catch (e) {
@@ -54,6 +55,23 @@ const carController = {
         try {
             let newCar = await Car.create(req.body);
             res.send(newCar);
+        } catch (e) {
+            console.log(e);
+            res.status(500).send(e);
+        }
+    },
+    put: async(req, res)=>{
+        try {
+            let newCars = [];
+        
+            for (let i = 0; i < req.body.length; i++) {
+                newCars.push(req.body[i]);
+            } 
+        
+            for (let i = 0; i < newCars.length; i++) {
+                await Car.create(newCars[i]);
+            }
+            res.send(newCars)
         } catch (e) {
             console.log(e);
             res.status(500).send(e);
