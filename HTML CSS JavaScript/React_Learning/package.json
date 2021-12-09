@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "create-react-app": "^4.0.3",
-    "react-router": "^6.0.2"
-  }
-}
