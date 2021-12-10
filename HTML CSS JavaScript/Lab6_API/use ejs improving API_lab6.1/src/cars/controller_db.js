@@ -60,6 +60,23 @@ const carController = {
             res.status(500).send(e);
         }
     },
+    put: async(req, res)=>{
+        try {
+            let newCars = [];
+        
+            for (let i = 0; i < req.body.length; i++) {
+                newCars.push(req.body[i]);
+            } 
+        
+            for (let i = 0; i < newCars.length; i++) {
+                await Car.create(newCars[i]);
+            }
+            res.send(newCars)
+        } catch (e) {
+            console.log(e);
+            res.status(500).send(e);
+        }
+    },
     patch: async(req, res)=>{
         try {
             let updatedCar = await Car.findByPk(parseInt(req.params.id));
